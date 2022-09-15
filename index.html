@@ -57,5 +57,18 @@
                 <td>5 hours</td>
             </tr>
         </table>
+        <hr>
+        <h4>Code display</h4>
+        <blockquote>
+        <a href="https://stackoverflow.com/questions/29209937/wordpress-function-php-script-include-into-head">wordpress function.php script include into head</a>
+        </blockquote>
+        <pre>
+            function add_ie_html5_shim () {
+                echo '<!--[if lt IE 9]>';
+                echo '<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>';
+                echo '<![endif]-->';
+            }
+            add_action('wp_head', 'add_ie_html5_shim');
+        </pre>
     </body>
 </html>
